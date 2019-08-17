@@ -84,7 +84,21 @@ end
 # end
 
 
-def run 
+def run(songs)
+  puts "Please enter a command:"
+  user_input = gets.strip 
+  if user_input == "help"
+    help
+  else if user_input == "list"
+    list(songs)
+  else if user_input == "play"
+    play(songs)
+  else if user_input == "exit"
+    exit_jukebox
+  else
+    puts "Invalid input, please try again"
+  end
+end
   
 
 
