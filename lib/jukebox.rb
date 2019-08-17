@@ -50,7 +50,7 @@ def play(songs)
   else if (1..9).include?(user_input.to_i)
     puts "Playing #{songs[user_input.to_i - 1]}"
   else
-    puts "Invalid input, please try again"
+    puts "Invalid input, please enter a command"
   end
 end
 end
